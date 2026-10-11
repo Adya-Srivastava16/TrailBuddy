@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TrailBuddy | Touch Grass</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="#" class="logo">🌿 TrailBuddy</a>
+    <div class="score">⭐ Points: <span id="points">0</span></div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <span class="tag">YOUR AI NATURE COMPANION</span>
+        <h1>Less scrolling.<br><span>More exploring.</span></h1>
+        <p>
+          Let AI turn your free time into real-world adventures.
+          Step outside, discover nature, and earn rewards.
+        </p>
+        <a href="#generator" class="main-btn">Start Exploring ↗</a>
+      </div>
+      <div class="hero-image">
+        <div class="floating-card">🌱 Your next adventure awaits</div>
+      </div>
+    </section>
+
+    <section class="generator" id="generator">
+      <div class="section-heading">
+        <span class="tag">POWERED BY OPEN-WEIGHT AI</span>
+        <h2>Find your next nature quest</h2>
+        <p>Tell us what you're feeling. AI will suggest an outdoor activity.</p>
+      </div>
+
+      <div class="form-card">
+        <label for="mood">What's your mood?</label>
+        <select id="mood">
+          <option value="relaxed">😌 Relaxed</option>
+          <option value="adventurous">🧭 Adventurous</option>
+          <option value="curious">🔍 Curious</option>
+          <option value="energetic">⚡ Energetic</option>
+        </select>
+
+        <label for="time">How much time do you have?</label>
+        <select id="time">
+          <option value="10">10 minutes</option>
+          <option value="20" selected>20 minutes</option>
+          <option value="30">30 minutes</option>
+          <option value="60">1 hour</option>
+        </select>
+
+        <label for="interest">Choose your interest</label>
+        <select id="interest">
+          <option value="plants and trees">🌳 Plants and trees</option>
+          <option value="birds and wildlife">🐦 Birds and wildlife</option>
+          <option value="walking and exploring">🥾 Walking and exploring</option>
+          <option value="gardening">🌻 Gardening</option>
+          <option value="relaxing in nature">🍃 Relaxing in nature</option>
+        </select>
+
+        <button id="generateBtn" class="main-btn full-btn">
+          ✨ Generate My Quest
+        </button>
+
+        <p id="aiStatus" class="status">
+          AI model will load when you generate your first quest.
+        </p>
+      </div>
+
+      <div id="questResult" class="quest-result hidden">
+        <span class="tag">YOUR PERSONALIZED QUEST</span>
+        <h3 id="questTitle">Nature Quest</h3>
+        <p id="questDescription"></p>
+        <ul id="questSteps"></ul>
+        <div class="quest-footer">
+          <span>🏆 <span id="questPoints">20</span> points</span>
+          <button id="completeBtn" class="main-btn">Complete Quest ✓</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="section-heading">
+        <span class="tag">EXPLORE YOUR WORLD</span>
+        <h2>Small steps, greener days</h2>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card">
+          <div class="feature-icon">🌳</div>
+          <h3>Forest Explorer</h3>
+          <p>Observe trees, leaves, and the little details of nature.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon">🐦</div>
+          <h3>Bird Watcher</h3>
+          <p>Listen to bird calls and notice the wildlife around you.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon">🌻</div>
+          <h3>Garden Helper</h3>
+          <p>Learn about plants and try simple gardening activities.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="about">
+      <h2>Why open-source AI?</h2>
+      <p>
+        TrailBuddy uses an open-weight AI model that can run directly
+        in your browser. This can reduce dependence on paid AI APIs
+        and keep your activity preferences on your device.
+      </p>
+      <span>Built for the Touch Grass challenge 🌍</span>
+    </section>
+  </main>
+
+  <footer>
+    <p>🌿 TrailBuddy © 2026 · Go outside. Find something wonderful.</p>
+  </footer>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
